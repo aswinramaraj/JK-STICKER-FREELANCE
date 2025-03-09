@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400&display=swap');
+
+body{
+   
+}
+.pro-container{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+}
+.pro-nav-container{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro-logo-img{
+    width: 100px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.product{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-top: 70px;
+    justify-content: center;
+
+}
+.procard1{
+    width: 24%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+.pro-img{
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+}
+.pro-details{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.product-name,.product-prize{
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.product-btn{
+    width: 100%;
+    height: 50px;
+    border: 2px solid #028090;
+    background-color: black;
+    font-family: Inter,sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #028090;
+}
+.product-btn:hover{
+    border: 3.5px solid #028090;
+    transition: 0.5s;
+    box-shadow: 1px 1px 2px #028090;
+}

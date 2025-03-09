@@ -1,0 +1,109 @@
+.pur-container {
+    width: 1000px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 200px;
+    box-shadow: 1px 4px 10px rgba(13, 11, 11, 0.523); /* soft shadow */
+    background-color: #f9f9f9; /* subtle background color */
+    overflow: hidden; /* to prevent content overflow */
+    transition: transform 0.3s ease; /* smooth hover effect */
+}
+
+.pur-container:hover {
+    transform: scale(1.02); /* slight scaling effect on hover */
+}
+
+.pur-container::before {
+  
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.pur-text{
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color:black;
+}
+.card-body1{
+    background-color: black;
+}
+.cart1 {
+    width: 110px !important;
+    height: 30px !important;
+    background: linear-gradient(135deg, #02657A, #014051);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cart1:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cart1:active {
+    transform: scale(0.95);
+}
+.card-name{
+    color: white;
+    font-family:'Poppins', sans-serif ;
+    font-size: 20px;
+}
+
+.more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between text and icon */
+    width: 180px;
+    height: 50px;
+    background: linear-gradient(135deg, #028090, #02657A);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.more-btn .icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.more-btn:hover {
+    background: linear-gradient(135deg, #02657A, #014F5B);
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
+}
+
+.more-btn:hover .icon {
+    transform: translateX(5px);
+}
+
+.more-btn:active {
+    transform: scale(0.95);
+}

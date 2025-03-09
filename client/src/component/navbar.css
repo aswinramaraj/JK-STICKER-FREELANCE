@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400&display=swap');
+
+body{
+   
+}
+.nav-container{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-img{
+    width: 100px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.logo-class{
+    width: 140px;
+    height: 140px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.nav-route{
+    width: auto;
+   
+    padding: 20px;
+    display: flex;
+    gap: 40%;
+    margin-left: 700px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* For screens up to 1200px */
+@media screen and (max-width: 1450px) {
+  .menu {
+    margin-right: 70px;
+  }
+  .nav-route {
+    margin-left: 400px;
+    gap: 20%;
+  }
+  .left-side {
+    margin-left: 50px;
+  }
+  .left-text-1 {
+    font-size: 40px;
+    width: 450px;
+  }
+  .left-text-2 {
+    font-size: 14px;
+    width: 460px;
+  }
+}
+@media screen and (max-width: 1145px) {
+  .menu {
+    margin-right: 50px;
+  }
+  .nav-route {
+    margin-left: 300px;
+    gap: 15%;
+  }
+  .left-side {
+    margin-left: 40px;
+  }
+  .left-text-1 {
+    font-size: 20px;
+    width: 350px;
+  }
+  .left-text-2 {
+    font-size: 10px;
+    width: 350px;
+  }
+}
+
+/* For screens up to 992px (Tablets) */
+@media screen and (max-width: 992px) {
+  .nav-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .logo-class {
+    margin-left: 0;
+  }
+  .nav-route {
+    margin-left: 0;
+    gap: 10%;
+  }
+  .main-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .left-side, .right-side {
+    width: 100%;
+    text-align: center;
+  }
+  .left-text-1 {
+    font-size: 35px;
+    width: 100%;
+  }
+  .left-text-2 {
+    font-size: 14px;
+    width: 100%;
+  }
+  .right-side-1, .right-side-2 {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+/* For screens up to 768px (Mobile) */
+@media screen and (max-width: 768px) {
+  .menu {
+    margin-right: 30px;
+  }
+  .nav-route {
+    display: none; /* Hide navigation items on smaller screens */
+  }
+  .menu ul {
+    text-align: left;
+  }
+  .main-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .left-side {
+    margin-top: 50px;
+  }
+  .left-text-1 {
+    font-size: 30px;
+  }
+  .left-text-2 {
+    font-size: 13px;
+  }
+  .right-side-1, .right-side-2 {
+    height: 500px;
+  }
+  .cssbuttons-io-button {
+    font-size: 15px;
+    height: 2.5em;
+  }
+}
+
+/* For screens up to 480px (Small Mobile) */
+@media screen and (max-width: 480px) {
+  .logo-img {
+    width: 80px;
+  }
+  .menu {
+    margin-right: 10px;
+  }
+  .left-text-1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .left-text-2 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .cssbuttons-io-button {
+    font-size: 14px;
+    height: 2.2em;
+  }
+}
+
+
+
+/* ---------------------------------------------------------- */
+.menu{
+  margin-right: 130px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu li{
+  display: inline-block;
+  font-family: Inter, sans-serif;
+margin-right: 50px;
+
+}
+.menu a{
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: black;
+  display: block;
+  position: relative;
+  padding: 4px 0;
+}
+.menu a::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
+}
+.menu a:hover::before{
+  transform: scale3d(1,1,1);
+}
+.menu-1 a::before{
+  background: #e2d7ff;
+  transform-origin: 100% 50%;
+}
+.menu-1 a:hover::before{
+  transform-origin: 0 50%;
+}
+.menu-2 a::before{
+  background: #e2d7ff;
+}
+.menu-3 a::before{
+  transform-origin: 50% 50%;
+  background: #e2d7ff;
+}
+.menu-4 a::before{
+  transform-origin: 100% 50%;
+  background: #e2d7ff;
+}
+.menu-5 a::before{
+  background: #e2d7ff;
+  transform-origin: 0 50%;
+}
+.menu-5 a:hover::before{
+  transform-origin: 100% 50%;
+}
+
+/* --------------------------- main css -----------------------------*/
+
+.main-container{
+  width: 100%;
+  height: 900px;
+  background-color: #e2d7ff;
+  display: flex;
+  justify-content: space-between;
+}
+.left-side{
+  width: 50%;
+  margin-top: 180px;
+  margin-left: 100px;
+}
+.right-side{
+  width: 50%;
+  background-color: black;
+  display: flex;
+
+ 
+}
+
+
+.left-text-1{
+  width: 560px;
+  color: #000000;
+font-size: 50px;
+margin: 0px;
+line-height: 61px;
+font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.left-text-2{
+  width: 570px;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Helvetica', sans-serif;
+}
+.jk{
+  color: rgb(162, 66, 25);
+}
+
+.right-side-1,.right-side-2{
+  width:50%;
+  height: 900px;
+  background-color:#e2d7ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  gap: 10%;
+ 
+ align-items: center;
+}
+
+/* -----------------------------------------btn */
+
+
+
+.cssbuttons-io-button {
+  background: black;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
