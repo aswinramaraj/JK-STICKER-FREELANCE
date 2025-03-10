@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './cssfile/confirmbuy.css'
 import { useNavigate } from 'react-router-dom';
 
 const Confirmbuy = () => {
