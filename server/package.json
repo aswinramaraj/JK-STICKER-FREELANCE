@@ -27,8 +27,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "your-build-command-here",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'No build step needed for backend'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
