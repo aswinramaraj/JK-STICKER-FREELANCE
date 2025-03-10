@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './cssfile/confirmbuy.css';
+
 import { useNavigate } from 'react-router-dom';
 
 const Confirmbuy = () => {
@@ -32,7 +32,7 @@ const Confirmbuy = () => {
       <div className="vid">
         <div className="video">
           <video 
-            src="/video/confirm1.mp4" 
+            src="" 
             controls
             autoplay 
             muted
