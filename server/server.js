@@ -17,7 +17,7 @@
     app.use(express.json());
     
     // MongoDB connection
-    mongoose.connect(process.env.MONGO_URI, {
+    mongoose.connect("mongodb+srv://ashwinkumar682005:gMwBidssyMMuatHY@cluster0.iakfk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
