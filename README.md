@@ -51,8 +51,8 @@
 
 ```bash
 # Clone the project
-git clone https://github.com/your-username/stickerstudio.git
-cd stickerstudio
+git clone https://github.com/aswinramaraj/JK-STICKR.git
+cd JK-STICKER
 
 # Open with VS Code or live server
 code .
